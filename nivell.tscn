@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgqsiiti4hknx"]
+
+[ext_resource type="PackedScene" uid="uid://bkqqrljqm7w26" path="res://node_2d.tscn" id="1_ijumj"]
+[ext_resource type="PackedScene" uid="uid://w1evevmk674y" path="res://detector.tscn" id="2_7itq6"]
+
+[node name="nivell" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_ijumj")]
+
+[node name="detector" parent="." instance=ExtResource("2_7itq6")]

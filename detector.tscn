@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://w1evevmk674y"]
+
+[ext_resource type="Script" uid="uid://blec4nc7g4m6g" path="res://detector.gd" id="1_btphw"]
+[ext_resource type="Texture2D" uid="uid://cguvtnqw0dhym" path="res://imatges/moneda.png" id="2_h4hr2"]
+
+[node name="detector" type="Area2D"]
+script = ExtResource("1_btphw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -2.37499)
+scale = Vector2(0.201, 0.2)
+texture = ExtResource("2_h4hr2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
