@@ -1,11 +1,12 @@
 extends CharacterBody2D
-var direccio := Vector2.ZERO
+
+var velocitat := 200
+
 func _ready() -> void:
 	position = Vector2(500, 300)
 
-var speed:= 120
-
 
 func _process(delta: float) -> void:
-	direccio = Input.get_vector("moure_amunt", "moure_avall", "moure_dreta", "moure_esquerra")
-	
+	var direccio = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	velocity = direccio * velocitat
+	move_and_slide()
