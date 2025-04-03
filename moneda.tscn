@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ct38d5vxhli8x"]
+
+[ext_resource type="Texture2D" uid="uid://cguvtnqw0dhym" path="res://imatges/moneda.png" id="1_nghqc"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Moneda" type="Sprite2D" parent="."]
+position = Vector2(258, 259)
+texture = ExtResource("1_nghqc")
