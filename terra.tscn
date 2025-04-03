@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://kued0vvep7rb"]
+
+[ext_resource type="Texture2D" uid="uid://bppjqsaiupep8" path="res://imatges/fondo blau.jpg" id="1_evcrw"]
+[ext_resource type="PackedScene" uid="uid://bkqqrljqm7w26" path="res://node_2d.tscn" id="2_nmh0e"]
+
+[sub_resource type="TileSet" id="TileSet_nmh0e"]
+
+[node name="terra" type="Node2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_nmh0e")
+
+[node name="FondoBlau" type="Sprite2D" parent="."]
+position = Vector2(578.75, 576)
+scale = Vector2(7.20937, 1.525)
+texture = ExtResource("1_evcrw")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_nmh0e")]
+position = Vector2(194, 367)
