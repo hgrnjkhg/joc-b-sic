@@ -1,10 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://cgqsiiti4hknx"]
+[gd_scene load_steps=4 format=3 uid="uid://cgqsiiti4hknx"]
 
 [ext_resource type="PackedScene" uid="uid://bkqqrljqm7w26" path="res://node_2d.tscn" id="1_ijumj"]
 [ext_resource type="PackedScene" uid="uid://w1evevmk674y" path="res://detector.tscn" id="2_7itq6"]
+[ext_resource type="PackedScene" uid="uid://cfbheep1dcw03" path="res://els terres.tscn" id="3_7itq6"]
 
 [node name="nivell" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_ijumj")]
-
 [node name="detector" parent="." instance=ExtResource("2_7itq6")]
+position = Vector2(490, 248)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_ijumj")]
+position = Vector2(53, 295)
+
+[node name="Terra" parent="." instance=ExtResource("3_7itq6")]
+position = Vector2(573, 527)

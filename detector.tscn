@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://w1evevmk674y"]
+[gd_scene load_steps=4 format=3 uid="uid://w1evevmk674y"]
 
 [ext_resource type="Script" uid="uid://blec4nc7g4m6g" path="res://detector.gd" id="1_btphw"]
 [ext_resource type="Texture2D" uid="uid://cguvtnqw0dhym" path="res://imatges/moneda.png" id="2_h4hr2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_btphw"]
+radius = 34.0588
 
 [node name="detector" type="Area2D"]
 script = ExtResource("1_btphw")
@@ -12,5 +15,6 @@ scale = Vector2(0.201, 0.2)
 texture = ExtResource("2_h4hr2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_btphw")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
