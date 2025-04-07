@@ -1,16 +1,51 @@
-[gd_scene load_steps=4 format=3 uid="uid://cgqsiiti4hknx"]
+[gd_scene load_steps=5 format=3 uid="uid://cgqsiiti4hknx"]
 
 [ext_resource type="PackedScene" uid="uid://bkqqrljqm7w26" path="res://node_2d.tscn" id="1_ijumj"]
 [ext_resource type="PackedScene" uid="uid://w1evevmk674y" path="res://detector.tscn" id="2_7itq6"]
 [ext_resource type="PackedScene" uid="uid://cfbheep1dcw03" path="res://els terres.tscn" id="3_7itq6"]
+[ext_resource type="PackedScene" uid="uid://b1gcg16u5us1y" path="res://subterra.tscn" id="4_v22as"]
 
 [node name="nivell" type="Node2D"]
 
 [node name="detector" parent="." instance=ExtResource("2_7itq6")]
 position = Vector2(490, 248)
 
+[node name="detector2" parent="." instance=ExtResource("2_7itq6")]
+position = Vector2(1204, 138)
+
+[node name="detector3" parent="." instance=ExtResource("2_7itq6")]
+position = Vector2(627, -200)
+
+[node name="detector4" parent="." instance=ExtResource("2_7itq6")]
+position = Vector2(-235, -409)
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_ijumj")]
 position = Vector2(53, 295)
 
 [node name="Terra" parent="." instance=ExtResource("3_7itq6")]
 position = Vector2(573, 527)
+
+[node name="Terra2" parent="." instance=ExtResource("3_7itq6")]
+position = Vector2(1113, 273)
+scale = Vector2(0.26, 1)
+
+[node name="Terra3" parent="." instance=ExtResource("3_7itq6")]
+position = Vector2(718, -41)
+scale = Vector2(0.26, 1)
+
+[node name="Terra4" parent="." instance=ExtResource("3_7itq6")]
+position = Vector2(27, -273)
+scale = Vector2(0.605, 1)
+
+[node name="Terra5" parent="." instance=ExtResource("3_7itq6")]
+position = Vector2(741, -607)
+scale = Vector2(0.605, 1)
+
+[node name="Area2D" parent="." instance=ExtResource("4_v22as")]
+position = Vector2(625, 780)
+
+[node name="Area2D2" parent="." instance=ExtResource("4_v22as")]
+position = Vector2(49, 782)
+
+[node name="Area2D3" parent="." instance=ExtResource("4_v22as")]
+position = Vector2(1624, 782)

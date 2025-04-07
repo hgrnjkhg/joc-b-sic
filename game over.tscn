@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkjrk1csqthdy"]
+
+[ext_resource type="Texture2D" uid="uid://c6irc0hwp1qid" path="res://imatges/gameoverphrase.jpg" id="1_v7q4x"]
+[ext_resource type="Script" uid="uid://d36jy0v3iw8km" path="res://button.gd" id="2_v7q4x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lfvhc"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Gameoverphrase" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(508, 257)
+texture = ExtResource("1_v7q4x")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 332.0
+offset_top = 422.0
+offset_right = 652.0
+offset_bottom = 445.0
+text = "FES CLICK AQUI PER TONAR A COMENÇAR"
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2(497, 427)
+scale = Vector2(17.62, 2.07)
+shape = SubResource("RectangleShape2D_lfvhc")
+
+[node name="Button" type="Button" parent="TouchScreenButton"]
+offset_left = -10.0
+offset_top = -9.0
+offset_right = 10.0
+offset_bottom = 10.0
+script = ExtResource("2_v7q4x")
+
+[connection signal="pressed" from="TouchScreenButton" to="TouchScreenButton" method="_on_pressed"]
+[connection signal="released" from="TouchScreenButton" to="TouchScreenButton" method="_on_released"]
+[connection signal="pressed" from="TouchScreenButton/Button" to="TouchScreenButton/Button" method="_on_pressed"]

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1gcg16u5us1y"]
+
+[ext_resource type="Script" uid="uid://co64rfobbj7ii" path="res://subterra.gd" id="1_lfu0d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fc5ad"]
+size = Vector2(1344, 48)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_lfu0d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 3)
+shape = SubResource("RectangleShape2D_fc5ad")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
