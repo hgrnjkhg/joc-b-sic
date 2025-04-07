@@ -34,11 +34,11 @@ position = Vector2(756, -41)
 scale = Vector2(0.26, 1)
 
 [node name="Terra4" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(-59, -147)
+position = Vector2(-0.999996, -89)
 scale = Vector2(0.605, 1)
 
 [node name="Terra5" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(699, -508)
+position = Vector2(707, -466)
 scale = Vector2(0.605, 1)
 
 [node name="Terra6" parent="." instance=ExtResource("3_7itq6")]
