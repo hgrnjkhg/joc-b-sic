@@ -1,6 +1,9 @@
 extends Area2D
 func _ready() -> void:
-	position = Vector2(800, 200)
+	pass
+	
+
+
 
 func _on_body_entered(body: Node2D) -> void:
 	visible = false

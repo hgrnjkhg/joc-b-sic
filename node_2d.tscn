@@ -2,20 +2,27 @@
 
 [ext_resource type="Script" uid="uid://durv8hvcjrwg0" path="res://character_body_2d.gd" id="1_0e48y"]
 [ext_resource type="Texture2D" uid="uid://b4m38lb8hnxlf" path="res://imatges/cotxe.png" id="2_0e48y"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
-size = Vector2(231, 137)
+[ext_resource type="Texture2D" uid="uid://bgs6ydkxvxrny" path="res://imatges/rodes.png" id="3_epypp"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_0e48y")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(13, -63, 1, -62, -26, -50, -47, -32, -56, -12, -72, -8, -78, 7, -76, 51, -63, 57, -44, 70, -29, 71, -14, 62, 60, 62, 82, 72, 106, 59, 142, 57, 147, 49, 148, 22, 133, -3, 113, -12, 98, -11, 105, -37, 103, -58, 95, -68, 60, -56)
 
 [node name="Cotxe" type="Sprite2D" parent="."]
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("2_0e48y")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(30.5, 0)
-shape = SubResource("RectangleShape2D_0e48y")
+[node name="Sprite2D" type="Sprite2D" parent="Cotxe"]
+position = Vector2(-50, 65.7143)
+scale = Vector2(0.338625, 0.338625)
+texture = ExtResource("3_epypp")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Cotxe"]
+position = Vector2(115.714, 65.7143)
+scale = Vector2(0.338625, 0.338625)
+texture = ExtResource("3_epypp")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_bottom = 1000
