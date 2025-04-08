@@ -11,6 +11,7 @@ func _process(delta: float) -> void:
 	direccio.x = Input.get_axis("ui_left", "ui_right")
 	velocity.x = direccio.x * velocitat
 	velocity += gravity * delta
+	$AnimatedSprite2D.play("default") 
 	
 	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		velocity.y = -3000

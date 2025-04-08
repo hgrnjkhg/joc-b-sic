@@ -37,7 +37,7 @@ position = Vector2(756, -41)
 scale = Vector2(0.26, 1)
 
 [node name="Terra4" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(-46, -44)
+position = Vector2(30, -39)
 scale = Vector2(0.605, 1)
 
 [node name="Terra5" parent="." instance=ExtResource("3_7itq6")]
@@ -61,16 +61,16 @@ position = Vector2(2949, -658)
 scale = Vector2(0.44, 1)
 
 [node name="Terra10" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(3462, -407)
+position = Vector2(3487, -463)
 scale = Vector2(0.32, 1)
 
 [node name="Terra11" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(3891, -175)
-rotation = 0.6353
+position = Vector2(3901, -205)
+rotation = 0.888373
 scale = Vector2(0.32, 1)
 
 [node name="Terra12" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(4331, 103)
+position = Vector2(4321, 204)
 scale = Vector2(0.32, 1.005)
 
 [node name="Area2D" parent="." instance=ExtResource("4_v22as")]

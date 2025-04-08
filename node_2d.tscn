@@ -1,28 +1,76 @@
-[gd_scene load_steps=4 format=3 uid="uid://bkqqrljqm7w26"]
+[gd_scene load_steps=15 format=3 uid="uid://bkqqrljqm7w26"]
 
 [ext_resource type="Script" uid="uid://durv8hvcjrwg0" path="res://character_body_2d.gd" id="1_0e48y"]
-[ext_resource type="Texture2D" uid="uid://b4m38lb8hnxlf" path="res://imatges/cotxe.png" id="2_0e48y"]
-[ext_resource type="Texture2D" uid="uid://bgs6ydkxvxrny" path="res://imatges/rodes.png" id="3_epypp"]
+[ext_resource type="Texture2D" uid="uid://bdc01duxe2cdl" path="res://imatges/player_09.png" id="2_0h7mo"]
+[ext_resource type="Texture2D" uid="uid://brkvgrv7760cp" path="res://imatges/player_10.png" id="3_nr8wp"]
+[ext_resource type="Texture2D" uid="uid://phnee31lasn8" path="res://imatges/player_11.png" id="4_d2bti"]
+[ext_resource type="Texture2D" uid="uid://8ab7ohfeluts" path="res://imatges/player_12.png" id="5_ta5nu"]
+[ext_resource type="Texture2D" uid="uid://cvut4r5l43o8m" path="res://imatges/player_13.png" id="6_flf07"]
+[ext_resource type="Texture2D" uid="uid://bvd5lnuf16jq3" path="res://imatges/player_14.png" id="7_k73cj"]
+[ext_resource type="Texture2D" uid="uid://dd2ki3r3ceskp" path="res://imatges/player_15.png" id="8_rjqkl"]
+[ext_resource type="Texture2D" uid="uid://0shr61yndwml" path="res://imatges/player_16.png" id="9_fs4d3"]
+[ext_resource type="Texture2D" uid="uid://clx77f68ta75q" path="res://imatges/player_17.png" id="10_7vxoj"]
+[ext_resource type="Texture2D" uid="uid://cq4deemtxloek" path="res://imatges/player_18.png" id="11_ei405"]
+[ext_resource type="Texture2D" uid="uid://byaat1w4nhf0l" path="res://imatges/player_19.png" id="12_e8dv2"]
+[ext_resource type="Texture2D" uid="uid://do5ydkrf1e4po" path="res://imatges/player_20.png" id="13_2nhjh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0hol4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0h7mo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nr8wp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_d2bti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ta5nu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_flf07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_k73cj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rjqkl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_fs4d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7vxoj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ei405")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_e8dv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_2nhjh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_0e48y")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(13, -63, 1, -62, -26, -50, -47, -32, -56, -12, -72, -8, -78, 7, -76, 51, -63, 57, -44, 70, -29, 71, -14, 62, 60, 62, 82, 72, 106, 59, 142, 57, 147, 49, 148, 22, 133, -3, 113, -12, 98, -11, 105, -37, 103, -58, 95, -68, 60, -56)
+scale = Vector2(0.895, 0.895)
+polygon = PackedVector2Array(-3.35196, -61.4525, -31.2849, -58.1006, -53.6313, -36.8715, -49.162, -8.93855, -44.6927, 20.1117, -48.0447, 35.7542, -53.6313, 46.9274, -32.4022, 62.5698, -16.7598, 61.4525, -4.46927, 62.5698, 14.5251, 61.4525, 33.5196, 61.4525, 40.2235, 58.1006, 50.2793, 49.162, 51.3967, 18.9944, 50.2793, 0, 54.7486, -21.2291, 37.9888, -56.9832)
 
-[node name="Cotxe" type="Sprite2D" parent="."]
-scale = Vector2(0.7, 0.7)
-texture = ExtResource("2_0e48y")
-
-[node name="Sprite2D" type="Sprite2D" parent="Cotxe"]
-position = Vector2(-50, 65.7143)
-scale = Vector2(0.338625, 0.338625)
-texture = ExtResource("3_epypp")
-
-[node name="Sprite2D2" type="Sprite2D" parent="Cotxe"]
-position = Vector2(115.714, 65.7143)
-scale = Vector2(0.338625, 0.338625)
-texture = ExtResource("3_epypp")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(1.085, 1.085)
+sprite_frames = SubResource("SpriteFrames_0hol4")
+frame_progress = 0.755314
 
 [node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(0.98, 0.98)
 limit_bottom = 1000
