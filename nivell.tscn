@@ -14,10 +14,13 @@ position = Vector2(763, 331)
 position = Vector2(1117, 161)
 
 [node name="detector3" parent="." instance=ExtResource("2_7itq6")]
-position = Vector2(627, -200)
+position = Vector2(485, -230)
 
 [node name="detector4" parent="." instance=ExtResource("2_7itq6")]
-position = Vector2(-3, -500)
+position = Vector2(-33, -437)
+
+[node name="detector5" parent="." instance=ExtResource("2_7itq6")]
+position = Vector2(1837, -836)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_ijumj")]
 position = Vector2(53, 295)
@@ -26,7 +29,7 @@ position = Vector2(53, 295)
 position = Vector2(573, 527)
 
 [node name="Terra2" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(1128, 273)
+position = Vector2(1098, 293)
 scale = Vector2(0.26, 1)
 
 [node name="Terra3" parent="." instance=ExtResource("3_7itq6")]
@@ -34,19 +37,19 @@ position = Vector2(756, -41)
 scale = Vector2(0.26, 1)
 
 [node name="Terra4" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(-0.999996, -89)
+position = Vector2(-46, -44)
 scale = Vector2(0.605, 1)
 
 [node name="Terra5" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(707, -466)
+position = Vector2(544, -432)
 scale = Vector2(0.605, 1)
 
 [node name="Terra6" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(1417, -654)
+position = Vector2(1311, -643)
 scale = Vector2(0.155, 1)
 
 [node name="Terra7" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(1851, -654)
+position = Vector2(1816, -643)
 scale = Vector2(0.155, 1)
 
 [node name="Terra8" parent="." instance=ExtResource("3_7itq6")]
@@ -56,6 +59,19 @@ scale = Vector2(0.155, 1)
 [node name="Terra9" parent="." instance=ExtResource("3_7itq6")]
 position = Vector2(2949, -658)
 scale = Vector2(0.44, 1)
+
+[node name="Terra10" parent="." instance=ExtResource("3_7itq6")]
+position = Vector2(3462, -407)
+scale = Vector2(0.32, 1)
+
+[node name="Terra11" parent="." instance=ExtResource("3_7itq6")]
+position = Vector2(3891, -175)
+rotation = 0.6353
+scale = Vector2(0.32, 1)
+
+[node name="Terra12" parent="." instance=ExtResource("3_7itq6")]
+position = Vector2(4331, 103)
+scale = Vector2(0.32, 1.005)
 
 [node name="Area2D" parent="." instance=ExtResource("4_v22as")]
 position = Vector2(930, 1391)
@@ -68,3 +84,6 @@ position = Vector2(2230, 1380)
 
 [node name="Area2D4" parent="." instance=ExtResource("4_v22as")]
 position = Vector2(3462, 1372)
+
+[node name="Area2D5" parent="." instance=ExtResource("4_v22as")]
+position = Vector2(4761, 1377)
