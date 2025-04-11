@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dporlws0di3w6"]
+
+[ext_resource type="Script" uid="uid://dn68s3nxg2ors" path="res://moneda vermella.gd" id="1_6f317"]
+[ext_resource type="Texture2D" uid="uid://0ak0mahrwx5" path="res://imatges/moneda vermella.png" id="2_27eps"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_glbht"]
+radius = 40.3113
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_6f317")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.38419e-07, -1.19209e-07)
+scale = Vector2(1, 1)
+shape = SubResource("CircleShape2D_glbht")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.38, 0.38)
+texture = ExtResource("2_27eps")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Has acabat el joc! Ben jugat!"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

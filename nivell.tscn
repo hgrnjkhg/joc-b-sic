@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cgqsiiti4hknx"]
+[gd_scene load_steps=6 format=3 uid="uid://cgqsiiti4hknx"]
 
 [ext_resource type="PackedScene" uid="uid://bkqqrljqm7w26" path="res://node_2d.tscn" id="1_ijumj"]
 [ext_resource type="PackedScene" uid="uid://w1evevmk674y" path="res://detector.tscn" id="2_7itq6"]
 [ext_resource type="PackedScene" uid="uid://cfbheep1dcw03" path="res://els terres.tscn" id="3_7itq6"]
 [ext_resource type="PackedScene" uid="uid://b1gcg16u5us1y" path="res://subterra.tscn" id="4_v22as"]
+[ext_resource type="PackedScene" uid="uid://dporlws0di3w6" path="res://moneda vermella.tscn" id="5_pcyq5"]
 
 [node name="nivell" type="Node2D"]
 
@@ -22,6 +23,12 @@ position = Vector2(-33, -437)
 [node name="detector5" parent="." instance=ExtResource("2_7itq6")]
 position = Vector2(1837, -836)
 
+[node name="detector6" parent="." instance=ExtResource("2_7itq6")]
+position = Vector2(3050, -856)
+
+[node name="detector7" parent="." instance=ExtResource("2_7itq6")]
+position = Vector2(3707, -203)
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_ijumj")]
 position = Vector2(53, 295)
 
@@ -37,7 +44,7 @@ position = Vector2(756, -41)
 scale = Vector2(0.26, 1)
 
 [node name="Terra4" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(30, -39)
+position = Vector2(86, -39)
 scale = Vector2(0.605, 1)
 
 [node name="Terra5" parent="." instance=ExtResource("3_7itq6")]
@@ -45,32 +52,32 @@ position = Vector2(544, -432)
 scale = Vector2(0.605, 1)
 
 [node name="Terra6" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(1311, -643)
+position = Vector2(1266, -628)
 scale = Vector2(0.155, 1)
 
 [node name="Terra7" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(1816, -643)
+position = Vector2(1669, -633)
 scale = Vector2(0.155, 1)
 
 [node name="Terra8" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(2319, -654)
+position = Vector2(2031, -634)
 scale = Vector2(0.155, 1)
 
 [node name="Terra9" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(2949, -658)
+position = Vector2(2600, -633)
 scale = Vector2(0.44, 1)
 
 [node name="Terra10" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(3487, -463)
+position = Vector2(3148, -463)
 scale = Vector2(0.32, 1)
 
 [node name="Terra11" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(3901, -205)
-rotation = 0.888373
+position = Vector2(3562, -114)
+rotation = 1.01578
 scale = Vector2(0.32, 1)
 
 [node name="Terra12" parent="." instance=ExtResource("3_7itq6")]
-position = Vector2(4321, 204)
+position = Vector2(3967, 209)
 scale = Vector2(0.32, 1.005)
 
 [node name="Area2D" parent="." instance=ExtResource("4_v22as")]
@@ -87,3 +94,6 @@ position = Vector2(3462, 1372)
 
 [node name="Area2D5" parent="." instance=ExtResource("4_v22as")]
 position = Vector2(4761, 1377)
+
+[node name="Area2D6" parent="." instance=ExtResource("5_pcyq5")]
+position = Vector2(4017, 72)
