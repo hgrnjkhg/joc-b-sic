@@ -18,6 +18,7 @@ func _process(delta: float) -> void:
 		
 	var desplaçament: Vector2 = direccio * velocitat
 	position = position + desplaçament*delta
+	
 	move_and_slide()
 
 func anima(desplaçament: Vector2, delta: float):
